@@ -1,0 +1,3263 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url(destination.css);
+
+@import url(crew.css);
+
+@import url(technology.css);
+
+@import url(footer.css);
+
+
+::-webkit-scrollbar-thumb {
+    background: #D0D6F9;
+    border-radius: 90px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #0B0D17;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellefair', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0B0D17;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/cover;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+    z-index: 999;
+}
+
+.logo {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+nav hr {
+    position: relative;
+    background: #fff;
+    top: 0;
+    left: 0;
+
+    width: 473px;
+    height: 1px;
+
+    display: inline-block;
+    flex-shrink: 0;
+    opacity: 0.275;
+}
+
+.navbar {
+    position: relative;
+    height: 96px;
+    display: flex;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.navbar__list-item {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+
+    height: 100%;
+    margin: 0 20px;
+    transition: all 0.3s;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Barlow condensed", sans-serif;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.navbar__list-item a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__list-item a span {
+    font-weight: 700;
+}
+
+.navbar__list-item:hover {
+    border-bottom: 3px solid #fff;
+    opacity: 0.5;
+}
+
+.content {
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    top: 351px;
+    left: 144px;
+}
+
+.content h2 {
+    color: #D0D6F9;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Barlow condensed", sans-serif;
+    letter-spacing: 4.725px;
+
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Bellefair', sans-serif;
+    font-weight: 400;
+
+    position: relative;
+    right: 16px;
+}
+
+.content p {
+    color: #D0D6F9;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.content .overlay {
+    position: relative;
+    width: 450px;
+    height: 450px;
+
+    bottom: 320px;
+    left: 650px;
+
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.content button {
+    position: relative;
+    width: 274px;
+    height: 274px;
+
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    color: #0B0D17;
+    background: #fff;
+    font-size: 46px;
+    letter-spacing: 4px;
+}
+
+.content .overlay:hover {
+    background-color: rgba(11, 13, 23, 0.6);
+}
+
+.crew__hr {
+    display: none;
+}
+
+/**
+    footer
+*/
+
+footer {
+    width: 100%;
+    height: 80px;
+    background: url(../assets/home/background-home-desktop.jpg) center center/cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer__left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left-logo {
+    width: 50px;
+    height: 50px;
+    background: url(../assets/home/logo.svg) no-repeat center center/cover;
+    margin: 0 20px;
+}
+
+.footer__left-content p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.footer__left-content p span {
+    border-bottom-style: dotted;
+}
+
+.footer__right-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0 100px;
+}
+
+.footer__right-list li {
+    margin: 0 10px;
+}
+
+.footer__right-list li a {
+    text-decoration: none;
+    color: #f7dede;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Barlow condensed", sans-serif;
+    letter-spacing: 2.7px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+/*
+    Active Classes
+*/
+
+.nav__1.active,
+.nav__2.active,
+.nav__3.active,
+.nav__4.active {
+    border-bottom: 3px solid #fff;
+}
+
+.moon__right-list li a:hover,
+.mars__right-list li a:hover,
+.europa__right-list li a:hover,
+.titan__right-list li a:hover {
+    border-bottom: 3px solid #D0D6F9;
+    opacity: 0.5;
+}
+
+.moon__right-list li a.active,
+.mars__right-list li a.active,
+.europa__right-list li a.active,
+.titan__right-list li a.active {
+    border-bottom: 3px solid #fff;
+}
+
+
+/****
+    Media Queries
+****/
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation : portrait) {
+    body {
+        max-width: 100vw;
+    }
+
+    header {
+        background: url(../assets/home/background-home-tablet.jpg);
+    }
+
+    nav .logo {
+        position: relative;
+        top: -16px;
+        width: 48px;
+        height: 48px;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 25px;
+        left: 280px;
+        width: 480px;
+        height: 96px;
+    }
+
+    .navbar__list-item {
+        font-size: 14px;
+        letter-spacing: 2.3px;
+    }
+
+    .navbar__list-item a span {
+        display: none;
+    }
+
+    .content {
+        position: relative;
+        top: 220px;
+        width: 450px;
+        height: 334px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 24px;
+        letter-spacing: 3.3px;
+        margin-bottom: 24px;
+    }
+
+    .content h1 {
+        font-size: 150px;
+        line-height: 151px;
+        margin-bottom: 30px;
+    }
+
+    .content p {
+        width: 444px;
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .content .overlay {
+        position: relative;
+        transform: translate(-550px, 352px);
+        width: 242px;
+        height: 242px;
+    }
+
+    .overlay button {
+        color: #0B0D17;
+        font-family: Bellefair;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+        width: 242px;
+        height: 242px;
+    }
+
+    /** 
+        destinaition
+    */
+    .moon,
+    .mars,
+    .europa,
+    .titan {
+        background: url(../assets/destination/background-destination-tablet.jpg) no-repeat center center/cover;
+    }
+
+    .moon__left-heading,
+    .mars__left-heading,
+    .europa__left-heading,
+    .titan__left-heading {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .moon__left-heading h5,
+    .mars__left-heading h5,
+    .europa__left-heading h5,
+    .titan__left-heading h5 {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .moon__left-heading span,
+    .mars__left-heading span,
+    .europa__left-heading span,
+    .titan__left-heading span {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .moon__left-img,
+    .mars__left-img,
+    .europa__left-img,
+    .titan__left-img {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+    }
+
+    .moon__left-img img,
+    .mars__left-img img,
+    .europa__left-img img,
+    .titan__left-img img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .moon__right,
+    .mars__right,
+    .europa__right,
+    .titan__right {
+        position: absolute;
+        top: 435px;
+        left: 240px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .moon__right hr,
+    .mars__right hr,
+    .europa__right hr,
+    .titan__right hr {
+        display: block;
+        width: 573px;
+        height: 1px;
+    }
+
+    .moon__right h1,
+    .mars__right h1,
+    .europa__right h1,
+    .titan__right h1 {
+        font-size: 88px;
+        line-height: 92px;
+        margin-bottom: 35px;
+    }
+
+    .moon__right p,
+    .mars__right p,
+    .europa__right p,
+    .titan__right p {
+        position: relative;
+        width: 573px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .moon__right-list,
+    .mars__right-list,
+    .europa__right-list,
+    .titan__right-list {
+        margin: 0 0 60px 0;
+    }
+
+    .moon__right-distance-left p,
+    .moon__right-distance-right p,
+    .mars__right-distance-left p,
+    .mars__right-distance-right p,
+    .europa__right-distance-left p,
+    .europa__right-distance-right p,
+    .titan__right-distance-left p,
+    .titan__right-distance-right p {
+        width: 216px;
+        font-size: 28px;
+        transform: translateX(-50px);
+    }
+
+    /** crew
+    */
+    .commander,
+    .mission,
+    .pilot,
+    .flight {
+        background: url(../assets/crew/background-crew-tablet.jpg) no-repeat center center/cover;
+    }
+
+    .commander__left-heading,
+    .mission__left-heading,
+    .pilot__left-heading,
+    .flight__left-heading {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+
+        width: 260px;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .commander__left-heading h5,
+    .mission__left-heading h5,
+    .pilot__left-heading h5,
+    .flight__left-heading h5 {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .commander__left-heading span,
+    .mission__left-heading span,
+    .pilot__left-heading span,
+    .flight__left-heading span {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .commander__left-content,
+    .mission__left-content,
+    .pilot__left-content,
+    .flight__left-content {
+        position: absolute;
+        top: -160px;
+        left: 0;
+        width: 458px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .commander__left-content h3,
+    .mission__left-content h3,
+    .pilot__left-content h3,
+    .flight__left-content h3 {
+        font-size: 24px;
+        opacity: 0.5;
+    }
+
+    .commander__left-content h1,
+    .mission__left-content h1,
+    .pilot__left-content h1,
+    .flight__left-content h1 {
+        font-size: 40px;
+        width: 457px;
+    }
+
+    .commander__left-content p,
+    .mission__left-content p,
+    .pilot__left-content p,
+    .flight__left-content p {
+        width: 458px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .circles button {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .commander__right {
+        position: absolute;
+        left: 214px;
+        top: 65%;
+    }
+
+    .mission__right,
+    .pilot__right,
+    .flight__right {
+        position: absolute;
+        left: 190px;
+        top: 74%;
+    }
+
+    .commander__right img {
+        display: block;
+        width: 400.09px;
+        height: 532px;
+        object-fit: contain;
+    }
+
+    .cirlces__command {
+        position: relative;
+        top: -500px;
+        left: 320px;
+    }
+
+    .circles__mission {
+        position: relative;
+        top: -470px;
+        left: 335px;
+    }
+
+    .circles__pilot {
+        position: relative;
+        top: -470px;
+        left: 335px;
+    }
+
+    .circles__flight {
+        position: relative;
+        top: -470px;
+        left: 335px;
+    }
+
+    .pilot__right img {
+        width: 380px;
+    }
+
+    .mission__right img {
+
+        width: 300.853px;
+        height: 532px;
+        object-fit: contain;
+    }
+
+    .flight__right img {
+        width: 380.508px;
+        height: 532px;
+        object-fit: contain;
+    }
+
+    /** 
+        technology   
+    */
+    .launch,
+    .spaceport,
+    .capsule {
+        background: url(../assets/technology/background-technology-tablet.jpg) no-repeat center center/cover;
+    }
+
+    .launch__left-heading,
+    .spaceport__left-heading,
+    .capsule__left-heading {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .launch__left-heading h5,
+    .spaceport__left-heading h5,
+    .capsule__left-heading h5 {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .launch__left-heading span,
+    .spaceport__left-heading span,
+    .capsule__left-heading span {
+        font-size: 20px;
+        letter-spacing: 3.3px;
+    }
+
+    .ovals a button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .launch__left-content,
+    .spaceport__left-content,
+    .capsule__left-content {
+        position: absolute;
+        top: 630px;
+        left: 130px;
+        width: 458px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .launch__left-content h3,
+    .spaceport__left-content h3,
+    .capsule__left-content h3 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+
+    .launch__left-content h1,
+    .spaceport__left-content h1,
+    .capsule__left-content h1 {
+        font-size: 40px;
+        width: 457px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+
+    .launch__left-content p,
+    .spaceport__left-content p,
+    .capsule__left-content p {
+        width: 458px;
+        font-size: 16px;
+    }
+
+    .launch__right,
+    .spaceport__right,
+    .capsule__right {
+        position: absolute;
+        width: 768px;
+        height: 310px;
+        left: 0px;
+        top: 160px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .launch__right .img1,
+    .spaceport__right .img1,
+    .capsule__right .img1 {
+        display: none;
+    }
+
+    .launch__right .img2,
+    .spaceport__right .img2,
+    .capsule__right .img2 {
+        display: block;
+        width: 100%;
+        height: 527px;
+    }
+
+    .ovals {
+        position: absolute;
+        top: 500px;
+        left: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ovals a button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    /**
+        Footer
+    */
+    footer {
+        width: 768px;
+    }
+
+    .footer__left-content p {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    .footer__left-content p span {
+        font-weight: 500;
+    }
+
+    .footer__right-list {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 0 20px;
+    }
+}
+
+@media (max-width: 325px) {
+    header {
+        background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/cover;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        position: relative;
+        top: -15px;
+        right: -278px;
+        display: block;
+        width: 30px;
+        height: 36px;
+        background: url(../assets/home/open.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        z-index: 1000;
+        filter: invert(1);
+
+    }
+
+    .hamburger.active {
+        width: 20.092px;
+        height: 20.092px;
+        background: url(../assets/home/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1000;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        position: relative;
+        right: -50px;
+        top: 19rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 254px;
+        height: 716px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list {
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 100px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active li {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    nav .logo {
+        position: absolute;
+        top: -15%;
+        left: -2%;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    nav .logo a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        text-align: center;
+    }
+
+    .content h2 {
+        width: 307px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content h1 {
+        width: 350px;
+        font-size: 80px;
+        letter-spacing: 6.7px;
+        line-height: 100px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content p {
+        width: 327px;
+        color: #D0D6F9;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .content .overlay {
+        position: absolute;
+        top: 55%;
+        left: -15%;
+    }
+
+    .content .overlay button {
+        width: 230px;
+        height: 230px;
+        font-size: 50px;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+    }
+
+
+
+    /**
+        Destination
+    */
+
+    .destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .moon__left-heading,
+    .mars__left-heading,
+    .europa__left-heading,
+    .titan__left-heading {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .moon__left-heading h5,
+    .mars__left-heading h5,
+    .europa__left-heading h5,
+    .titan__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .moon__left-heading span,
+    .mars__left-heading span,
+    .europa__left-heading span,
+    .titan__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .moon__left-img,
+    .mars__left-img,
+    .europa__left-img,
+    .titan__left-img {
+        position: absolute;
+        top: 65px;
+        left: 25px;
+    }
+
+    .moon__left-img img,
+    .mars__left-img img,
+    .europa__left-img img,
+    .titan__left-img img {
+        width: 259px;
+        height: 259px;
+
+    }
+
+    .moon__right,
+    .mars__right,
+    .europa__right,
+    .titan__right {
+        top: 337px;
+    }
+
+    .moon__right h1,
+    .mars__right h1,
+    .europa__right h1,
+    .titan__right h1 {
+        font-size: 56px;
+        width: 187px;
+        margin: 16px;
+        line-height: 64px;
+        display: contents;
+    }
+
+    .moon__right p,
+    .mars__right p,
+    .europa__right p,
+    .titan__right p {
+        position: revert;
+        width: 315px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+
+    .moon__right-list,
+    .mars__right-list,
+    .europa__right-list,
+    .titan__right-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        text-align: center;
+
+        width: 237.5px;
+        height: 28px;
+        margin: 0 0 10px 55px;
+    }
+
+    .moon__right-list li,
+    .mars__right-list li,
+    .europa__right-list li,
+    .titan__right-list li {
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        padding: 12px;
+    }
+
+    .moon__right hr,
+    .mars__right hr,
+    .europa__right hr,
+    .titan__right hr {
+        width: 300px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        left: 2%;
+        margin: 5px;
+    }
+
+    .moon__right-distance,
+    .mars__right-distance,
+    .europa__right-distance,
+    .titan__right-distance {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 237.5px;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left,
+    .moon__right-distance-right,
+    .mars__right-distance-left,
+    .mars__right-distance-right,
+    .europa__right-distance-left,
+    .europa__right-distance-right,
+    .titan__right-distance-left,
+    .titan__right-distance-right {
+
+        text-align: center;
+        width: 118px;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left span,
+    .moon__right-distance-right span,
+    .mars__right-distance-left span,
+    .mars__right-distance-right span,
+    .europa__right-distance-left span,
+    .europa__right-distance-right span,
+    .titan__right-distance-left span,
+    .titan__right-distance-right span {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        padding: 12px;
+        margin: 9px;
+        text-align: center;
+    }
+
+    .moon__right-distance-left p,
+    .moon__right-distance-right p,
+    .mars__right-distance-left p,
+    .mars__right-distance-right p,
+    .europa__right-distance-left p,
+    .europa__right-distance-right p,
+    .titan__right-distance-left p,
+    .titan__right-distance-right p {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 22px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /**
+        Crew
+    */
+
+    .commander__left-heading,
+    .pilot__left-heading,
+    .mission__left-heading,
+    .flight__left-heading {
+        position: absolute;
+        top: -376px;
+        left: -178px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .commander__left-heading h5,
+    .pilot__left-heading h5,
+    .mission__left-heading h5,
+    .flight__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .commander__left-heading span,
+    .pilot__left-heading span,
+    .mission__left-heading span,
+    .flight__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .commander,
+    .pilot,
+    .mission,
+    .flight {
+        background: url(../assets/crew/background-crew-mobile.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content,
+    .pilot__left-content,
+    .mission__left-content,
+    .flight__left-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content h3 {
+        position: absolute;
+        top: 33%;
+        left: -20%;
+        font-size: 16px;
+        line-height: 18px;
+        width: 137px;
+    }
+
+    .commander__left-content h1 {
+        position: absolute;
+        top: 42%;
+        left: -48%;
+        font-size: 24px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .commander__left-content p {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h3 {
+        position: absolute;
+        top: 5%;
+        left: -45%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h1 {
+        position: absolute;
+        top: 20%;
+        left: -50%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .mission__left-content p {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 14px;
+        line-height: 40px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 0%;
+        left: -48%;
+        font-size: 15px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h1 {
+        position: absolute;
+        top: 15%;
+        left: -49%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .pilot__left-content p {
+        position: absolute;
+        top: 60%;
+        left: -48%;
+        font-size: 12.5px;
+        line-height: 35px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+
+
+    .circles {
+        width: max-content;
+        height: max-content;
+    }
+
+    .circles button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew__hr {
+        display: block;
+        width: 280px;
+    }
+
+    .command__hr {
+        position: relative;
+        top: -23.5rem;
+        right: -1rem;
+    }
+
+    .mission__hr {
+        position: relative;
+        top: -27.5rem;
+        right: -1rem;
+    }
+
+    .pilot__hr {
+        position: relative;
+        top: -28.25rem;
+        right: -1rem;
+    }
+
+    .flight__hr {
+        position: relative;
+        top: -27.25rem;
+        right: -1rem;
+    }
+
+    .cirlces__command {
+        position: relative;
+        top: -350px;
+        left: 105px;
+    }
+
+    .circles__mission {
+        position: relative;
+        top: -418px;
+        left: 112px;
+    }
+
+    .circles__pilot {
+        position: relative;
+        top: -435px;
+        left: 100px;
+    }
+
+    .circles__flight {
+        position: relative;
+        top: -422px;
+        left: 100px;
+    }
+
+
+    .commander__right {
+        position: absolute;
+        top: -10rem;
+        right: 12rem;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pilot__right {
+        position: absolute;
+        top: -12rem;
+        right: 9rem;
+    }
+
+    .mission__right {
+        position: absolute;
+        top: -12rem;
+        right: 13rem;
+    }
+
+    .flight__right {
+        position: absolute;
+        top: -12rem;
+        right: 11rem;
+    }
+
+    .commander__right img {
+        width: 226.147px;
+        height: 322px;
+        object-fit: cover;
+    }
+
+    .mission__right img {
+        width: 153.92px;
+        height: 232px;
+        object-fit: cover;
+    }
+
+    .pilot__right img {
+        width: 180.726px;
+        height: 222px;
+        object-fit: cover;
+    }
+
+    .flight__right img {
+        width: 226.147px;
+        height: 237px;
+        object-fit: cover;
+    }
+
+    /**
+        Technology
+    */
+    .technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .launch,
+    .spaceport,
+    .capsule {
+        background: url(../assets/technology/background-technology-mobile.jpg) no-repeat center center/cover;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .launch__left-heading,
+    .spaceport__left-heading,
+    .capsule__left-heading {
+        position: absolute;
+        top: 0%;
+        left: 2%;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .launch__left-heading h5,
+    .spaceport__left-heading h5,
+    .capsule__left-heading h5 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .launch__left-heading span,
+    .spaceport__left-heading span,
+    .capsule__left-heading span {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .launch__left-content,
+    .spaceport__left-content,
+    .capsule__left-content {
+        position: absolute;
+        top: 355px;
+        left: 0%;
+        width: 315px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__left-content h3,
+    .spaceport__left-content h3,
+    .capsule__left-content h3 {
+        font-size: 14px;
+        line-height: 17px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .capsule__left-content h1,
+    .spaceport__left-content h1,
+    .launch__left-content h1 {
+        font-size: 24px;
+        line-height: 28px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__left-content p,
+    .spaceport__left-content p,
+    .capsule__left-content p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 306px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__right,
+    .spaceport__right,
+    .capsule__right {
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        width: 314px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__right .img1,
+    .spaceport__right .img1,
+    .capsule__right .img1 {
+        display: none;
+    }
+
+    .launch__right .img2,
+    .spaceport__right .img2,
+    .capsule__right .img2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /**
+        Footer
+    */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+    }
+
+    .footer__left-logo img {
+        position: absolute;
+        left: 15px;
+        width: min-content;
+        height: min-content;
+    }
+
+    .footer__left-content {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__left-content p {
+        width: 260px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__right-list {
+        display: none;
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/cover;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        position: relative;
+        top: -15px;
+        right: -340px;
+        display: block;
+        width: 30px;
+        height: 36px;
+        background: url(../assets/home/open.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        z-index: 1000;
+        filter: invert(1);
+
+    }
+
+    .hamburger.active {
+        width: 20.092px;
+        height: 20.092px;
+        background: url(../assets/home/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1000;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        position: relative;
+        right: -100px;
+        top: 19rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 254px;
+        height: 716px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list {
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 100px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active li {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    nav .logo {
+        position: absolute;
+        top: -15%;
+        left: -2%;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    nav .logo a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        top: 22%;
+        left: 20px;
+        text-align: center;
+    }
+
+    .content h2 {
+        width: 307px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content h1 {
+        width: 350px;
+        font-size: 80px;
+        letter-spacing: 6.7px;
+        line-height: 100px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content p {
+        width: 327px;
+        color: #D0D6F9;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .content .overlay {
+        position: absolute;
+        top: 55%;
+        left: -15%;
+    }
+
+    .content .overlay button {
+        width: 230px;
+        height: 230px;
+        font-size: 50px;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+    }
+
+
+
+    /**
+        Destination
+    */
+
+    .destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .moon__left-heading,
+    .mars__left-heading,
+    .europa__left-heading,
+    .titan__left-heading {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .moon__left-heading h5,
+    .mars__left-heading h5,
+    .europa__left-heading h5,
+    .titan__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .moon__left-heading span,
+    .mars__left-heading span,
+    .europa__left-heading span,
+    .titan__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .moon__left-img,
+    .mars__left-img,
+    .europa__left-img,
+    .titan__left-img {
+        position: absolute;
+        top: 65px;
+        left: 40px;
+    }
+
+    .moon__left-img img,
+    .mars__left-img img,
+    .europa__left-img img,
+    .titan__left-img img {
+        width: 259px;
+        height: 259px;
+
+    }
+
+    .moon__right,
+    .mars__right,
+    .europa__right,
+    .titan__right {
+        position: relative;
+        top: 337px;
+        left: 19px;
+    }
+
+    .moon__right h1,
+    .mars__right h1,
+    .europa__right h1,
+    .titan__right h1 {
+        position: relative;
+        left: -35px;
+        font-size: 56px;
+        margin: 16px;
+        line-height: 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon__right p,
+    .mars__right p,
+    .europa__right p,
+    .titan__right p {
+        position: revert;
+        width: 315px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .moon__right-list,
+    .mars__right-list,
+    .europa__right-list,
+    .titan__right-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        text-align: center;
+
+        width: 237.5px;
+        height: 28px;
+        margin: 0 0 10px 55px;
+    }
+
+    .moon__right-list li,
+    .mars__right-list li,
+    .europa__right-list li,
+    .titan__right-list li {
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        padding: 12px;
+    }
+
+    .moon__right hr,
+    .mars__right hr,
+    .europa__right hr,
+    .titan__right hr {
+        width: 300px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        left: 2%;
+        margin: 5px;
+    }
+
+    .moon__right-distance,
+    .mars__right-distance,
+    .europa__right-distance,
+    .titan__right-distance {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 260.5px;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left,
+    .moon__right-distance-right,
+    .mars__right-distance-left,
+    .mars__right-distance-right,
+    .europa__right-distance-left,
+    .europa__right-distance-right,
+    .titan__right-distance-left,
+    .titan__right-distance-right {
+
+        text-align: center;
+        width: 118px;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left span,
+    .moon__right-distance-right span,
+    .mars__right-distance-left span,
+    .mars__right-distance-right span,
+    .europa__right-distance-left span,
+    .europa__right-distance-right span,
+    .titan__right-distance-left span,
+    .titan__right-distance-right span {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        margin: 9px;
+        text-align: center;
+    }
+
+    .moon__right-distance-left p,
+    .moon__right-distance-right p,
+    .mars__right-distance-left p,
+    .mars__right-distance-right p,
+    .europa__right-distance-left p,
+    .europa__right-distance-right p,
+    .titan__right-distance-left p,
+    .titan__right-distance-right p {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 22px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /**
+        Crew
+    */
+
+    .commander__left-heading,
+    .pilot__left-heading,
+    .mission__left-heading,
+    .flight__left-heading {
+        position: absolute;
+        top: -376px;
+        left: -178px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .commander__left-heading h5,
+    .pilot__left-heading h5,
+    .mission__left-heading h5,
+    .flight__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .commander__left-heading span,
+    .pilot__left-heading span,
+    .mission__left-heading span,
+    .flight__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .commander,
+    .pilot,
+    .mission,
+    .flight {
+        background: url(../assets/crew/background-crew-mobile.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content,
+    .pilot__left-content,
+    .mission__left-content,
+    .flight__left-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content h3 {
+        position: absolute;
+        top: 33%;
+        left: -20%;
+        font-size: 16px;
+        line-height: 18px;
+        width: 137px;
+    }
+
+    .commander__left-content h1 {
+        position: absolute;
+        top: 42%;
+        left: -48%;
+        font-size: 24px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .commander__left-content p {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h3 {
+        position: absolute;
+        top: 5%;
+        left: -45%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h1 {
+        position: absolute;
+        top: 20%;
+        left: -50%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .mission__left-content p {
+        position: absolute;
+        top: 65%;
+        left: -48%;
+        font-size: 14px;
+        line-height: 40px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 0%;
+        left: -48%;
+        font-size: 15px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h1 {
+        position: absolute;
+        top: 15%;
+        left: -49%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .pilot__left-content p {
+        position: absolute;
+        top: 50%;
+        left: -48%;
+        font-size: 12.5px;
+        line-height: 35px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+
+
+    .circles {
+        width: max-content;
+        height: max-content;
+    }
+
+    .circles button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew__hr {
+        display: block;
+        width: 280px;
+    }
+
+    .command__hr {
+        position: relative;
+        top: -24rem;
+        right: -2rem;
+    }
+
+    .mission__hr {
+        position: relative;
+        top: -27.95rem;
+        right: -2rem;
+    }
+
+    .pilot__hr {
+        position: relative;
+        top: -28.75rem;
+        right: -2rem;
+    }
+
+    .flight__hr {
+        position: relative;
+        top: -28rem;
+        right: -2.5rem;
+    }
+
+
+    .cirlces__command {
+        position: relative;
+        top: -350px;
+        left: 105px;
+    }
+
+    .circles__mission {
+        position: relative;
+        top: -432px;
+        left: 130px;
+    }
+
+    .circles__pilot {
+        position: relative;
+        top: -444px;
+        left: 125px;
+    }
+
+    .circles__flight {
+        position: relative;
+        top: -431px;
+        left: 127px;
+    }
+
+
+    .commander__right {
+        position: absolute;
+        top: -10rem;
+        right: 12rem;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pilot__right {
+        position: absolute;
+        top: -12rem;
+        right: 9rem;
+    }
+
+    .mission__right {
+        position: absolute;
+        top: -12rem;
+        right: 14rem;
+    }
+
+    .flight__right {
+        position: absolute;
+        top: -12rem;
+        right: 11rem;
+    }
+
+    .commander__right img {
+        width: 226.147px;
+        height: 322px;
+        object-fit: cover;
+    }
+
+    .mission__right img {
+        width: 153.92px;
+        height: 232px;
+        object-fit: cover;
+    }
+
+    .pilot__right img {
+        width: 180.726px;
+        height: 222px;
+        object-fit: cover;
+    }
+
+    .flight__right img {
+        width: 226.147px;
+        height: 237px;
+        object-fit: cover;
+    }
+
+    /**
+        Technology
+    */
+    .technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .launch,
+    .spaceport,
+    .capsule {
+        background: url(../assets/technology/background-technology-mobile.jpg) no-repeat center center/cover;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .launch__left-heading,
+    .spaceport__left-heading,
+    .capsule__left-heading {
+        position: absolute;
+        top: 25px;
+        left: 5%;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .launch__left-heading h5,
+    .spaceport__left-heading h5,
+    .capsule__left-heading h5 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .launch__left-heading span,
+    .spaceport__left-heading span,
+    .capsule__left-heading span {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .launch__left-content,
+    .spaceport__left-content,
+    .capsule__left-content {
+        position: absolute;
+        top: 425px;
+        left: 15%;
+        width: 315px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__left-content h3,
+    .spaceport__left-content h3,
+    .capsule__left-content h3 {
+        font-size: 14px;
+        line-height: 17px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .capsule__left-content h1,
+    .spaceport__left-content h1,
+    .launch__left-content h1 {
+        font-size: 24px;
+        line-height: 28px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__left-content p,
+    .spaceport__left-content p,
+    .capsule__left-content p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 306px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__right,
+    .spaceport__right,
+    .capsule__right {
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        width: 370px;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__right .img1,
+    .spaceport__right .img1,
+    .capsule__right .img1 {
+        display: none;
+    }
+
+    .launch__right .img2,
+    .spaceport__right .img2,
+    .capsule__right .img2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ovals {
+        top: 300px;
+        right: 65px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ovals a {
+        width: 60px;
+        margin: 10px;
+    }
+
+    .ovals a button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /**
+        Footer
+    */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+    }
+
+    .footer__left-logo img {
+        position: absolute;
+        left: 15px;
+        width: min-content;
+        height: min-content;
+    }
+
+    .footer__left-content {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__left-content p {
+        width: 260px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__right-list {
+        display: none;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/cover;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        position: relative;
+        top: -15px;
+        right: -390px;
+        display: block;
+        width: 30px;
+        height: 36px;
+        background: url(../assets/home/open.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        z-index: 1000;
+        filter: invert(1);
+
+    }
+
+    .hamburger.active {
+        width: 20.092px;
+        height: 20.092px;
+        background: url(../assets/home/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1000;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        position: relative;
+        right: -148px;
+        top: 19rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 254px;
+        height: 716px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list {
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 100px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__list.active li {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    nav .logo {
+        position: absolute;
+        top: -15%;
+        left: -2%;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    nav .logo a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        top: 22%;
+        left: 42px;
+        text-align: center;
+    }
+
+    .content h2 {
+        width: 307px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content h1 {
+        width: 355px;
+        font-size: 80px;
+        letter-spacing: 6.7px;
+        line-height: 100px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .content p {
+        width: 327px;
+        color: #D0D6F9;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .content .overlay {
+        position: absolute;
+        top: 55%;
+        left: -15%;
+    }
+
+    .content .overlay button {
+        width: 230px;
+        height: 230px;
+        font-size: 50px;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+    }
+
+
+
+    /**
+        Destination
+    */
+
+    .destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .moon__left-heading,
+    .mars__left-heading,
+    .europa__left-heading,
+    .titan__left-heading {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .moon__left-heading h5,
+    .mars__left-heading h5,
+    .europa__left-heading h5,
+    .titan__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .moon__left-heading span,
+    .mars__left-heading span,
+    .europa__left-heading span,
+    .titan__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .moon__left-img,
+    .mars__left-img,
+    .europa__left-img,
+    .titan__left-img {
+        position: absolute;
+        top: 65px;
+        left: 70px;
+    }
+
+    .moon__left-img img,
+    .mars__left-img img,
+    .europa__left-img img,
+    .titan__left-img img {
+        width: 259px;
+        height: 259px;
+
+    }
+
+    .moon__right,
+    .mars__right,
+    .europa__right,
+    .titan__right {
+        position: relative;
+        top: 337px;
+        left: 45px;
+    }
+
+    .moon__right h1,
+    .mars__right h1,
+    .europa__right h1,
+    .titan__right h1 {
+        position: relative;
+        left: -50px;
+        font-size: 56px;
+        margin: 16px;
+        line-height: 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon__right p,
+    .mars__right p,
+    .europa__right p,
+    .titan__right p {
+        position: revert;
+        width: 330px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .moon__right-list,
+    .mars__right-list,
+    .europa__right-list,
+    .titan__right-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        text-align: center;
+
+        width: 237.5px;
+        height: 28px;
+        margin: 0 0 10px 75px;
+    }
+
+    .moon__right-list li,
+    .mars__right-list li,
+    .europa__right-list li,
+    .titan__right-list li {
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        padding: 12px;
+    }
+
+    .moon__right hr,
+    .mars__right hr,
+    .europa__right hr,
+    .titan__right hr {
+        width: 300px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        left: 5%;
+        margin: -10px;
+    }
+
+    .moon__right-distance,
+    .mars__right-distance,
+    .europa__right-distance,
+    .titan__right-distance {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 260.5px;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left,
+    .moon__right-distance-right,
+    .mars__right-distance-left,
+    .mars__right-distance-right,
+    .europa__right-distance-left,
+    .europa__right-distance-right,
+    .titan__right-distance-left,
+    .titan__right-distance-right {
+
+        text-align: center;
+        width: 118px;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .moon__right-distance-left span,
+    .moon__right-distance-right span,
+    .mars__right-distance-left span,
+    .mars__right-distance-right span,
+    .europa__right-distance-left span,
+    .europa__right-distance-right span,
+    .titan__right-distance-left span,
+    .titan__right-distance-right span {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 14px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        margin: 9px;
+        text-align: center;
+    }
+
+    .moon__right-distance-left p,
+    .moon__right-distance-right p,
+    .mars__right-distance-left p,
+    .mars__right-distance-right p,
+    .europa__right-distance-left p,
+    .europa__right-distance-right p,
+    .titan__right-distance-left p,
+    .titan__right-distance-right p {
+        position: relative;
+        left: 50%;
+        width: max-content;
+        font-size: 22px;
+        letter-spacing: 2.3px;
+        color: #D0D6F9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /**
+        Crew
+    */
+
+    .commander__left-heading,
+    .pilot__left-heading,
+    .mission__left-heading,
+    .flight__left-heading {
+        position: absolute;
+        top: -378px;
+        left: -215px;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .commander__left-heading h5,
+    .pilot__left-heading h5,
+    .mission__left-heading h5,
+    .flight__left-heading h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .commander__left-heading span,
+    .pilot__left-heading span,
+    .mission__left-heading span,
+    .flight__left-heading span {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .commander,
+    .pilot,
+    .mission,
+    .flight {
+        background: url(../assets/crew/background-crew-mobile.jpg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content,
+    .pilot__left-content,
+    .mission__left-content,
+    .flight__left-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .commander__left-content h3 {
+        position: absolute;
+        top: 33%;
+        left: -20%;
+        font-size: 16px;
+        line-height: 18px;
+        width: 137px;
+    }
+
+    .commander__left-content h1 {
+        position: absolute;
+        top: 42%;
+        left: -48%;
+        font-size: 24px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .commander__left-content p {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 75%;
+        left: -48%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h3 {
+        position: absolute;
+        top: 5%;
+        left: -45%;
+        font-size: 13px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .mission__left-content h1 {
+        position: absolute;
+        top: 20%;
+        left: -50%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .mission__left-content p {
+        position: absolute;
+        top: 65%;
+        left: -48%;
+        font-size: 14px;
+        line-height: 40px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h3 {
+        position: absolute;
+        top: 0%;
+        left: -48%;
+        font-size: 15px;
+        line-height: 30px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .pilot__left-content h1 {
+        position: absolute;
+        top: 15%;
+        left: -49%;
+        font-size: 23px;
+        width: 327px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .pilot__left-content p {
+        position: absolute;
+        top: 50%;
+        left: -48%;
+        font-size: 12.5px;
+        line-height: 35px;
+        width: 310px;
+        height: 120px;
+        text-align: center;
+    }
+
+
+
+    .circles {
+        width: max-content;
+        height: max-content;
+    }
+
+    .circles button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew__hr {
+        display: block;
+        width: 280px;
+    }
+
+    .command__hr {
+        position: relative;
+        top: -24rem;
+        right: -4rem;
+    }
+
+    .mission__hr {
+        position: relative;
+        top: -27.95rem;
+        right: -4rem;
+    }
+
+    .pilot__hr {
+        position: relative;
+        top: -28.75rem;
+        right: -4rem;
+    }
+
+    .flight__hr {
+        position: relative;
+        top: -28rem;
+        right: -4rem;
+    }
+
+
+    .cirlces__command {
+        position: relative;
+        top: -365px;
+        left: 150px;
+    }
+
+    .circles__mission {
+        position: relative;
+        top: -432px;
+        left: 152px;
+    }
+
+    .circles__pilot {
+        position: relative;
+        top: -444px;
+        left: 150px;
+    }
+
+    .circles__flight {
+        position: relative;
+        top: -431px;
+        left: 145px;
+    }
+
+
+    .commander__right {
+        position: absolute;
+        top: -10rem;
+        right: 12rem;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pilot__right {
+        position: absolute;
+        top: -12rem;
+        right: 9rem;
+    }
+
+    .mission__right {
+        position: absolute;
+        top: -12rem;
+        right: 14rem;
+    }
+
+    .flight__right {
+        position: absolute;
+        top: -12rem;
+        right: 11rem;
+    }
+
+    .commander__right img {
+        width: 226.147px;
+        height: 322px;
+        object-fit: cover;
+    }
+
+    .mission__right img {
+        width: 153.92px;
+        height: 232px;
+        object-fit: cover;
+    }
+
+    .pilot__right img {
+        width: 180.726px;
+        height: 222px;
+        object-fit: cover;
+    }
+
+    .flight__right img {
+        width: 226.147px;
+        height: 237px;
+        object-fit: cover;
+    }
+
+    /**
+        Technology
+    */
+    .technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .launch,
+    .spaceport,
+    .capsule {
+        background: url(../assets/technology/background-technology-mobile.jpg) no-repeat center center/cover;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .launch__left-heading,
+    .spaceport__left-heading,
+    .capsule__left-heading {
+        position: absolute;
+        top: 25px;
+        left: 5%;
+        width: max-content;
+        display: inline-flex;
+        padding-right: 0px;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    .launch__left-heading h5,
+    .spaceport__left-heading h5,
+    .capsule__left-heading h5 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .launch__left-heading span,
+    .spaceport__left-heading span,
+    .capsule__left-heading span {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .launch__left-content,
+    .spaceport__left-content,
+    .capsule__left-content {
+        position: absolute;
+        top: 430px;
+        left: 35%;
+        width: 315px;
+        height: 232px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__left-content h3,
+    .spaceport__left-content h3,
+    .capsule__left-content h3 {
+        font-size: 14px;
+        line-height: 17px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .capsule__left-content h1,
+    .spaceport__left-content h1,
+    .launch__left-content h1 {
+        font-size: 24px;
+        line-height: 28px;
+        width: 327px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__left-content p,
+    .spaceport__left-content p,
+    .capsule__left-content p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 306px;
+        height: 232px;
+        text-align: center;
+    }
+
+    .launch__right,
+    .spaceport__right,
+    .capsule__right {
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        width: 420px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .launch__right .img1,
+    .spaceport__right .img1,
+    .capsule__right .img1 {
+        display: none;
+    }
+
+    .launch__right .img2,
+    .spaceport__right .img2,
+    .capsule__right .img2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ovals {
+        top: 315px;
+        right: 85px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ovals a {
+        width: 60px;
+        margin: 10px;
+    }
+
+    .ovals a button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /**
+        Footer
+    */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+    }
+
+    .footer__left-logo img {
+        position: absolute;
+        left: 15px;
+        width: min-content;
+        height: min-content;
+    }
+
+    .footer__left-content {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__left-content p {
+        width: 260px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__left-content p span {
+        font-size: 1.1em;
+    }
+
+    .footer__right-list {
+        display: none;
+        margin: 0;
+    }
+}

@@ -1,0 +1,348 @@
+.launch {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background: url(../assets/technology/background-technology-desktop.jpg) no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+.launch__left {
+    position: relative;
+    width: 552px;
+    z-index: 2;
+}
+
+.launch__left-heading {
+    position: relative;
+    top: 140px;
+    left: 160px;
+    width: 315px;
+    height: 34px;
+}
+
+.launch__left-heading h5 {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.launch__left-heading span {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    margin-right: 24px;
+}
+
+.launch__left-content {
+    position: relative;
+    top: 310px;
+    left: 270px;
+}
+
+.launch__left-content h3 {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.7px;
+}
+
+.launch__left-content h1 {
+    width: 470px;
+    height: 64px;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 6.8px;
+    margin: 16px 0 24px;
+}
+
+.launch__left-content p {
+    width: 444px;
+    height: 192px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.launch__right {
+    position: relative;
+    left: 750px;
+    bottom: 100px;
+}
+
+.launch__right img {
+    width: 515px;
+    height: 527px;
+}
+
+
+/*
+    SpacePort
+*/
+
+.spaceport {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background: url(../assets/technology/background-technology-desktop.jpg) no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+.spaceport__left {
+    position: relative;
+    width: 552px;
+    z-index: 2;
+}
+
+.spaceport__left-heading {
+    position: relative;
+    top: 140px;
+    left: 160px;
+    width: 315px;
+    height: 34px;
+}
+
+.spaceport__left-heading h5 {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.spaceport__left-heading span {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    margin-right: 24px;
+}
+
+.spaceport__left-content {
+    position: relative;
+    top: 310px;
+    left: 270px;
+}
+
+.spaceport__left-content h3 {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.7px;
+}
+
+.spaceport__left-content h1 {
+    width: 470px;
+    height: 64px;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 6.8px;
+    margin: 16px 0 24px;
+}
+
+.spaceport__left-content p {
+    width: 444px;
+    height: 192px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.spaceport__right {
+    position: relative;
+    left: 750px;
+    bottom: 100px;
+}
+
+.spaceport__right img {
+    width: 515px;
+    height: 527px;
+}
+
+
+/*
+    SpaceCapsule
+*/
+
+.capsule {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background: url(../assets/technology/background-technology-desktop.jpg) no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+.capsule__left {
+    position: relative;
+    width: 552px;
+    z-index: 2;
+}
+
+.capsule__left-heading {
+    position: relative;
+    top: 140px;
+    left: 160px;
+    width: 315px;
+    height: 34px;
+}
+
+.capsule__left-heading h5 {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.capsule__left-heading span {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    margin-right: 24px;
+}
+
+.capsule__left-content {
+    position: relative;
+    top: 310px;
+    left: 270px;
+}
+
+.capsule__left-content h3 {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.7px;
+}
+
+.capsule__left-content h1 {
+    width: 470px;
+    height: 64px;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 6.8px;
+    margin: 16px 0 24px;
+}
+
+.capsule__left-content p {
+    width: 444px;
+    height: 192px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.capsule__right {
+    position: relative;
+    left: 750px;
+    bottom: 100px;
+}
+
+.capsule__right img {
+    width: 515px;
+    height: 527px;
+}
+
+.launch__right .img2,
+.spaceport__right .img2,
+.capsule__right .img2 {
+    display: none;
+}
+
+/**
+    Navigation
+*/
+
+.ovals {
+    position: relative;
+    top: 332px;
+    right: 442px;
+    display: flex;
+    flex-direction: column;
+    z-index: 555;
+}
+
+.ovals a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    margin: 16px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ovals button.active {
+    outline: none;
+    opacity: 1;
+    color: #0B0D17;
+    background-color: #FFF;
+}
+
+.ovals a button {
+    width: 80px;
+    height: 80px;
+
+    border: none;
+    outline: 1px solid #999191;
+    background-color: transparent;
+    color: #FFF;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 28px;
+    font-weight: 200;
+    font-family: "Bellefair", sans-serif;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.ovals a button:hover{
+    outline: 2px solid #fff;
+}

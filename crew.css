@@ -1,0 +1,439 @@
+
+.crew ul.active {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 132px;
+  height: 15px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.commander{
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.commander__left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.commander__left-heading{
+    position: relative;
+    top: 180px;
+    left: 160px;
+}
+
+.commander__left-heading h5{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.commander__left-heading h5 span{
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.commander__left-content h3 {
+    position: relative;
+    top: 310px;
+    left: 180px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    opacity: 0.5;
+}
+
+.commander__left-content h1{
+    position: relative;
+    top: 330px;
+    left: 180px;
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+
+    margin: 15px 0 17px 0;
+}
+
+.commander__left-content p {
+    position: relative;
+    width: 444px;
+    height: 128px;
+    top: 350px;
+    left: 180px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.commander__right{
+    position: relative;
+    bottom: 180px;
+    right: 0px;
+    transform: translate(146%, 0%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+}
+
+.commander__right img{
+    position: relative;
+}
+
+/*
+    Mission Specialist
+*/
+.mission{
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.mission__left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mission__left-heading{
+    position: relative;
+    top: 180px;
+    left: 160px;
+}
+
+.mission__left-heading h5{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.mission__left-heading h5 span{
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.mission__left-content h3 {
+    position: relative;
+    top: 310px;
+    left: 180px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    opacity: 0.5;
+}
+
+.mission__left-content h1{
+    position: relative;
+    top: 330px;
+    left: 180px;
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+
+    margin: 15px 0 17px 0;
+}
+
+.mission__left-content p {
+    position: relative;
+    width: 444px;
+    height: 128px;
+    top: 350px;
+    left: 180px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.mission__right{
+    position: relative;
+    bottom: 180px;
+    right: 0px;
+    transform: translate(190%, 0%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+}
+
+.mission__right img{
+    position: relative;
+}
+
+/*
+    Pilot
+*/
+.pilot{
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.pilot__left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pilot__left-heading{
+    position: relative;
+    top: 180px;
+    left: 160px;
+}
+
+.pilot__left-heading h5{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.pilot__left-heading h5 span{
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.pilot__left-content h3 {
+    position: relative;
+    top: 310px;
+    left: 180px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    opacity: 0.5;
+}
+
+.pilot__left-content h1{
+    position: relative;
+    top: 330px;
+    left: 180px;
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+
+    margin: 15px 0 17px 0;
+}
+
+.pilot__left-content p {
+    position: relative;
+    width: 444px;
+    height: 128px;
+    top: 350px;
+    left: 180px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.pilot__right{
+    position: relative;
+    bottom: 180px;
+    right: 0px;
+    transform: translate(130%, 0%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+}
+
+.pilot__right img{
+    position: relative;
+}
+
+/*
+    Flight Enginner
+*/
+.flight{
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.flight__left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flight__left-heading{
+    position: relative;
+    top: 180px;
+    left: 160px;
+}
+
+.flight__left-heading h5{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.flight__left-heading h5 span{
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.flight__left-content h3 {
+    position: relative;
+    top: 310px;
+    left: 180px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    opacity: 0.5;
+}
+
+.flight__left-content h1{
+    position: relative;
+    top: 330px;
+    left: 180px;
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+
+    margin: 15px 0 17px 0;
+}
+
+.flight__left-content p {
+    position: relative;
+    width: 444px;
+    height: 128px;
+    top: 350px;
+    left: 180px;
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.flight__right{
+    position: relative;
+    bottom: 180px;
+    right: 0px;
+    transform: translate(130%, -10%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+}
+
+.flight__right img{
+    position: relative;
+}
+
+/***
+    navigation buttom
+***/
+
+.circles{
+    position: relative;
+    bottom: 160px;
+    left: 180px;
+
+    width: 132px;
+    height: 15px;
+}
+.circles button{
+    display: inline-block;
+    background-color: #87888f;
+    opacity: 0.5;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    width: 15px;
+    height: 15px;
+    margin: 7px;
+    
+    transition: all 0.3s ease-in-out;
+}
+.circles button.active{
+    background-color: #fff;
+    opacity: 1;
+}
+
+.circles button:hover{
+    opacity: 1;
+}
